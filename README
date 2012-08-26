@@ -1,0 +1,13 @@
+The project aims at developing a spam detector. The algorithm uses supervised classification to achieve this.
+The training data used is the UCI Spambase data set and the code has been written in Octave.
+
+Two Training Models have been implemented (as suggested by the names of the 2 folders in the root directory):
+	1. naive bayes
+	2. full bayes (or the decision boundary based bayes classifier assuming normal distribution of the features)
+
+*both models assume independence of the features.
+
+In both implementations, there are 3 main files:
+	1. buildModel.m : builds the model and stores it into files.
+	2. spamDetect.m : loads the model from the files, reads the test data from the specified file and produces evaluation results in the form of accuracy, precision, recall etc
+	3. spamEval.m : performs n-fold cross validation of the model
