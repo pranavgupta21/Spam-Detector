@@ -1,7 +1,11 @@
 # naive Bayes classifier on UCI spambase data set #
 # assumption : the data is correct and preprocessed accurately without any anomalies #
 
+# fetch the training data into a matrix
 M = csvread('spambase.data.txt')(1151:4600,:);
+
+# divide the data of different classes
+# ====================================
 W1 = zeros(0,57);
 W2 = zeros(0,57);
 
@@ -23,7 +27,6 @@ rowsW2 = rows(W2);
 
 P = [rowsW1/rows(M), rowsW2/rows(M)];
 ####################
-
 
 
 # Calculating Likelihoods #

@@ -19,6 +19,10 @@ f55ranges = [1 3 6];
 f56ranges = [0 4 7];
 f57ranges = [0 4 7];
 
+
+# run the classifier
+# ==================
+
 for rowno = [1:rows(M)]
 	rowM = M(rowno,:);
 	G = [1 1];
